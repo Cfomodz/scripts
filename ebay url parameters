@@ -1,0 +1,126 @@
+eBay website search URL parameters
+
+
+View (top right next to Sort)
+-------------------------------
+_dmd=2   gallery view
+_dmd=1   list view
+_dmd=0   list view (no longer - must use 1 to force list view)
+none     list view (no longer? defaults to gallery now?)
+
+
+Include description (top under search bar)
+---------------------------------------------
+LH_TitleDesc=0  don't include
+LH_TitleDesc=1  include
+
+
+Sort Order Preference: (top right) - 
+------------------------
+_sop=1   Time: Ending soonest
+_sop=3   Highest First
+_sop=7   Distance: Nearest First
+_sop=10  Time: Newly listed
+_sop=12  Best Match
+_sop=13  Ended Recently
+_sop=15  Price+Shipping: lowest first
+_sop=16  Price+Shipping: highest first
+
+
+
+Item Location (left navbar)
+------------------------------
+LH_PrefLoc=0  default
+LH_PrefLoc=1  US Only
+LH_PrefLoc=2  Worldwide
+
+PrefLoc=0    default
+PrefLoc=1    US Only
+PrefLoc=2    Worldwide
+_sadis=15    Within search distance
+_stpos=95825 Within reference zipcode
+
+
+
+Price (left navbar)
+---------------------
+_udlo=20
+_udhi=50
+
+
+Items per page
+------------------------
+_ipg=10,50,100,200
+
+
+Member searches
+------------------------------
+_sofindtype=25 by seller
+_sofindtype=2  by seller
+_sofindtype=3  by bidder
+_sofindtype=9  contact info
+_sofindtype=5  ?
+&_fcm=1        for close matches?
+
+
+LH_ItemCondition
+----------------------------
+10    Not Specified
+1000  New
+1500  New Other
+2000  Manufacture Refurbished
+2500  Seller Refurbished
+3000  Used
+7000  For Parts or Not Working
+can be combined: &LH_ItemCondition=10|1000|1500|2000|2500|3000
+
+_oac=1     Overrides category left nav filter hiding?
+_fosrp=1   ?????
+
+&_blrs=spell_check       Spell checked was used
+&_blrs=recall_filtering  Don't show partial results
+
+
+LH Show Only options
+--------------------------------
+LH_Sold=1      Sold Items
+LH_Complete=1  Completed Items
+LH_Savings=1   Deals & Savings
+LH_AS=1        Authorized Seller
+LH_RPA=1       Returns Accepted
+LH_FR=1        Free Returns
+LH_BO=1        Accepts Best Offer
+LH_SaleItems=1 Sale Items
+LH_Lots=1      Listed as Lots
+LH_TitleDesc=1 Search in Description
+LH_PayPal=1    PayPal Accepted
+LH_Charity=1   Benefits Charity
+INVALID LH_ManPay=1  Managed Payments Accepted
+
+LH Show Based on
+--------------------------------
+LH_Time  nothing or 1	Show items within a specific time (or disabled / can be removed)
+_ftrt	901     (Ending within)
+      902     (Ending in more than)
+      903     (Started within)	How to use the time
+_ftrv	number  Time (hours)
+
+LH_NOB	nothing or 1  Number of bids within a range enabled (or disabled / can be removed)
+_sabdlo	number	        Minimum number of bids
+_sabdhi	number	        Maximum number of bids
+
+
+Delivery Options:
+----------------------------
+LH_EXPEDITED=1  Expedited Shipping/Express Delivery
+LH_GIFAST=1     Get It Fast
+LH_FS=1         Free Shipping/S&H/P&P
+LH_LPickup=2    Local Pickup
+
+
+----------------------------------------
+If left nav "Sold Listings" and "Complete Listings" are grayed out
+probably because "Include Description" box is checked.
+---------------------------------------
+Wildcard searches using old engine?
+http://www.ebay.com/sch/?_pppn=v3&_nkw=fi+fi+fo*&_ipg=200&_dmd=1&LH_PrefLoc=0&_pgn=1
