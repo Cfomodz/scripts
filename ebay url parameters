@@ -79,6 +79,7 @@ _fosrp=1   ?????
 
 &_blrs=spell_check       Spell checked was used
 &_blrs=recall_filtering  Don't show partial results
+&_blrs=category_constraint  ?????
 
 
 LH Show Only options
